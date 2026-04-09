@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Resume Builder</h1>
+        <p>Create a professional resume in minutes</p>
+    </header>
+
+    <!-- Progress Steps -->
+    <div class="progress">
+        <span class="step active">Personal</span>
+        <span class="step">Summary</span>
+        <span class="step">Skills</span>
+        <span class="step">Education</span>
+        <span class="step">Experience</span>
+        <span class="step">Projects</span>
+        <span class="step">Preview</span>
+    </div>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <div class="form-section active">
+            <h2>Personal Information</h2>
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="email" type="email" placeholder="Email Address">
+            <input id="phone" type="tel" placeholder="Phone Number">
+            <input id="location" type="text" placeholder="City, Country">
+        </div>
+
+        <div class="form-section">
+            <h2>Professional Summary</h2>
+            <textarea id="summary" placeholder="Write a short professional summary"></textarea>
+            <input id="linkedin" type="url" placeholder="LinkedIn Profile URL">
+            <input id="github" type="url" placeholder="GitHub / Portfolio URL">
+        </div>
+
+        <div class="form-section">
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="List your skills (comma separated)"></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Education</h2>
+            <input id="degree" type="text" placeholder="Degree">
+            <input id="institute" type="text" placeholder="Institute Name">
+            <input id="gradYear" type="text" placeholder="Year of Completion">
+        </div>
+
+        <div class="form-section">
+            <h2>Work Experience</h2>
+            <input id="jobTitle" type="text" placeholder="Job Title">
+            <input id="company" type="text" placeholder="Company Name">
+            <textarea id="experience" placeholder="Describe your responsibilities"></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Projects</h2>
+            <input id="projectTitle" type="text" placeholder="Project Title">
+            <textarea id="projectDesc" placeholder="Project Description"></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Resume Preview</h2>
+            <div id="preview">
+                <h3 id="r-name">Name</h3>
+                <p id="r-location" class="muted"></p>
+                <p id="r-email" class="muted"></p>
+                <p id="r-phone" class="muted"></p>
+                <section>
+                    <h4>Summary</h4>
+                    <p id="r-summary"></p>
+                </section>
+                <section>
+                    <h4>Skills</h4>
+                    <p id="r-skills"></p>
+                </section>
+                <section>
+                    <h4>Education</h4>
+                    <p id="r-education"></p>
+                </section>
+                <section>
+                    <h4>Experience</h4>
+                    <p id="r-experience"></p>
+                </section>
+                <section>
+                    <h4>Projects</h4>
+                    <p id="r-projects"></p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="downloadBtn">Download PDF</button>
+        </div>
+
+    </main>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
